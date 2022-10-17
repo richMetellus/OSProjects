@@ -1,0 +1,29 @@
+
+
+tar -xzvf filename -C target
+      ^      ^      ^   ^
+      |      |      |   name of directory to unpack into
+      |      |      |
+      |      |      switch to append to unpack into target directory
+      |      |         upper case C to unpack into existing target directory
+      |      |
+      |      name of tarball archive file
+      |
+      tar command swithces
+         x extract tar archive
+         z archive is compressed
+         v verbose
+         f use arcive file, filename
+
+
+#example:
+#
+# assumes that:
+#    the current directory continas the tarball archive file,
+#    the directory simulator exits,
+#    simulator is a child directory of the directory containg the archive
+# 
+
+tar -xzvf HW-Threads-RealCV.gz  -C  ./simulator
+
+
